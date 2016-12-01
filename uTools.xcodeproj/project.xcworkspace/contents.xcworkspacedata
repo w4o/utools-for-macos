@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:encode.xcodeproj">
+      location = "self:/Users/Frank/github/zhxiaowu/encode-for-macos/uTools.xcodeproj">
    </FileRef>
 </Workspace>

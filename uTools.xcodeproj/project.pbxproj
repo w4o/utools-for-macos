@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0124A1051DF01DD500D43BB9 /* CryptoSwift.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0124DDD21DF00CF90004D16D /* CryptoSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0124A1071DF0236C00D43BB9 /* EncodeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0124A1061DF0236C00D43BB9 /* EncodeController.swift */; };
+		0124A1091DF0239200D43BB9 /* GenColltroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0124A1081DF0239200D43BB9 /* GenColltroller.swift */; };
 		0124DDD71DF00D3F0004D16D /* CryptoSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0124DDD21DF00CF90004D16D /* CryptoSwift.framework */; };
 		01C8A0421DEED8C7007A4C4C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01C8A0411DEED8C7007A4C4C /* AppDelegate.swift */; };
 		01C8A0441DEED8C7007A4C4C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01C8A0431DEED8C7007A4C4C /* ViewController.swift */; };
@@ -38,9 +41,24 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		0124A1041DF01DCC00D43BB9 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				0124A1051DF01DD500D43BB9 /* CryptoSwift.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		0124A1061DF0236C00D43BB9 /* EncodeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EncodeController.swift; sourceTree = "<group>"; };
+		0124A1081DF0239200D43BB9 /* GenColltroller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenColltroller.swift; sourceTree = "<group>"; };
 		0124DDCC1DF00CF90004D16D /* CryptoSwift.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CryptoSwift.xcodeproj; path = CryptoSwift/CryptoSwift.xcodeproj; sourceTree = SOURCE_ROOT; };
-		01C8A03E1DEED8C7007A4C4C /* encode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = encode.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		01C8A03E1DEED8C7007A4C4C /* uTools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = uTools.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		01C8A0411DEED8C7007A4C4C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		01C8A0431DEED8C7007A4C4C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		01C8A0451DEED8C7007A4C4C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -72,7 +90,7 @@
 		01C8A0351DEED8C7007A4C4C = {
 			isa = PBXGroup;
 			children = (
-				01C8A0401DEED8C7007A4C4C /* encode */,
+				01C8A0401DEED8C7007A4C4C /* uTools */,
 				01C8A03F1DEED8C7007A4C4C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -80,12 +98,12 @@
 		01C8A03F1DEED8C7007A4C4C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				01C8A03E1DEED8C7007A4C4C /* encode.app */,
+				01C8A03E1DEED8C7007A4C4C /* uTools.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		01C8A0401DEED8C7007A4C4C /* encode */ = {
+		01C8A0401DEED8C7007A4C4C /* uTools */ = {
 			isa = PBXGroup;
 			children = (
 				0124DDCC1DF00CF90004D16D /* CryptoSwift.xcodeproj */,
@@ -94,29 +112,32 @@
 				01C8A0451DEED8C7007A4C4C /* Assets.xcassets */,
 				01C8A0471DEED8C7007A4C4C /* Main.storyboard */,
 				01C8A04A1DEED8C7007A4C4C /* Info.plist */,
+				0124A1061DF0236C00D43BB9 /* EncodeController.swift */,
+				0124A1081DF0239200D43BB9 /* GenColltroller.swift */,
 			);
-			path = encode;
+			path = uTools;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		01C8A03D1DEED8C7007A4C4C /* encode */ = {
+		01C8A03D1DEED8C7007A4C4C /* uTools */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 01C8A04D1DEED8C7007A4C4C /* Build configuration list for PBXNativeTarget "encode" */;
+			buildConfigurationList = 01C8A04D1DEED8C7007A4C4C /* Build configuration list for PBXNativeTarget "uTools" */;
 			buildPhases = (
 				01C8A03A1DEED8C7007A4C4C /* Sources */,
 				01C8A03B1DEED8C7007A4C4C /* Frameworks */,
 				01C8A03C1DEED8C7007A4C4C /* Resources */,
+				0124A1041DF01DCC00D43BB9 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				0124DDD61DF00D1C0004D16D /* PBXTargetDependency */,
 			);
-			name = encode;
-			productName = encode;
-			productReference = 01C8A03E1DEED8C7007A4C4C /* encode.app */;
+			name = uTools;
+			productName = uTools;
+			productReference = 01C8A03E1DEED8C7007A4C4C /* uTools.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -136,7 +157,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 01C8A0391DEED8C7007A4C4C /* Build configuration list for PBXProject "encode" */;
+			buildConfigurationList = 01C8A0391DEED8C7007A4C4C /* Build configuration list for PBXProject "uTools" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -155,7 +176,7 @@
 			);
 			projectRoot = "";
 			targets = (
-				01C8A03D1DEED8C7007A4C4C /* encode */,
+				01C8A03D1DEED8C7007A4C4C /* uTools */,
 			);
 		};
 /* End PBXProject section */
@@ -194,8 +215,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0124A1071DF0236C00D43BB9 /* EncodeController.swift in Sources */,
 				01C8A0441DEED8C7007A4C4C /* ViewController.swift in Sources */,
 				01C8A0421DEED8C7007A4C4C /* AppDelegate.swift in Sources */,
+				0124A1091DF0239200D43BB9 /* GenColltroller.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,9 +340,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = encode/Info.plist;
+				INFOPLIST_FILE = uTools/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = cn.wuzhuti.encode;
+				PRODUCT_BUNDLE_IDENTIFIER = cn.wuzhuti.utools;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
@@ -332,9 +355,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = encode/Info.plist;
+				INFOPLIST_FILE = uTools/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = cn.wuzhuti.encode;
+				PRODUCT_BUNDLE_IDENTIFIER = cn.wuzhuti.utools;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -343,7 +366,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		01C8A0391DEED8C7007A4C4C /* Build configuration list for PBXProject "encode" */ = {
+		01C8A0391DEED8C7007A4C4C /* Build configuration list for PBXProject "uTools" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				01C8A04B1DEED8C7007A4C4C /* Debug */,
@@ -352,7 +375,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		01C8A04D1DEED8C7007A4C4C /* Build configuration list for PBXNativeTarget "encode" */ = {
+		01C8A04D1DEED8C7007A4C4C /* Build configuration list for PBXNativeTarget "uTools" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				01C8A04E1DEED8C7007A4C4C /* Debug */,

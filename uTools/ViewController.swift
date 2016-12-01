@@ -16,6 +16,7 @@ class ViewController: NSViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
         initPage()
         
     }
@@ -25,6 +26,127 @@ class ViewController: NSViewController {
             // Update the view, if already loaded.
         }
     }
+    
+    @IBOutlet weak var numChk: NSButton!
+    
+    @IBOutlet weak var abcLowerCaseChk: NSButton!
+    
+    @IBOutlet weak var abcUpperCaseChk: NSButton!
+    
+    @IBOutlet weak var charChk: NSButton!
+    
+    @IBOutlet weak var lengthTxt: NSTextField!
+    
+    @IBOutlet weak var genResultTxt: NSTextField!
+    
+    @IBOutlet weak var genBtn: NSButton!
+    
+    @IBOutlet weak var lengthSlider: NSSlider!
+    
+    @IBOutlet weak var lengthStep: NSStepper!
+    
+    
+    let numArr:[String] = ["0","1","2","3","4","5","6","7","8","9"]
+    ,abcLowerCaseArr:[String] = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"]
+    ,abcUpperCaseArr:[String] = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"]
+    ,charArr:[String] = ["!","@","#","$","%","^","&","*"]
+    
+    
+    // 生成按钮点击动作
+    @IBAction func genBtnAction(_ sender: Any) {
+        
+       let result = genPass()
+        
+        genResultTxt.stringValue = result
+        
+    }
+    
+    // 复制按钮 动作
+    @IBAction func copyBtnAction(_ sender: Any) {
+        setTextToPasteBoard(text: genResultTxt.stringValue)
+    }
+    
+    // 生成并复制按钮动作
+    @IBAction func genAndCopyBtnAction(_ sender: Any) {
+        
+        let result = genPass()
+        
+        genResultTxt.stringValue = result
+        
+        setTextToPasteBoard(text: result)
+    }
+    // 生成密码
+    func genPass() -> String {
+        let length:Int32 = lengthTxt.intValue
+        
+        ,isNum = numChk.state
+        ,isChar = charChk.state
+        ,isAbcLowerCase = abcLowerCaseChk.state
+        ,isAbcUpperCase = abcUpperCaseChk.state
+        
+        var strBox:[String] = []
+        
+        if isNum  == 1 {
+            strBox = strBox + numArr
+        }
+        if isChar == 1 {
+            strBox = strBox + charArr
+        }
+        if isAbcLowerCase == 1 {
+            strBox = strBox + abcLowerCaseArr
+        }
+        if isAbcUpperCase == 1 {
+            strBox = strBox + abcUpperCaseArr
+        }
+        
+        let arrLength:UInt32 = UInt32(strBox.count)
+        
+        var result = ""
+        
+        
+        for _:Int32 in 1 ... length {
+            
+            let random = arc4random() % arrLength
+            result = result + strBox[Int(random)]
+        }
+        
+        return result
+    }
+    
+    // 复制剪切板
+    func setTextToPasteBoard(text: String)  {
+        let pasteBoard = NSPasteboard.general()
+        pasteBoard.declareTypes([NSStringPboardType], owner: nil)
+        pasteBoard.writeObjects([text as NSPasteboardWriting])
+    }
+    
+    // 长度文本框 动作
+    @IBAction func lengthTxtAction(_ sender: Any) {
+        
+        let length = lengthTxt.stringValue
+        lengthSlider.stringValue = length
+        lengthStep.stringValue = length
+        
+    }
+    // 长度滑动条 动作
+    @IBAction func lengthSliderAction(_ sender: Any) {
+        
+        let length = lengthSlider.doubleValue
+        lengthTxt.intValue = Int32(round(length))
+        lengthStep.intValue = Int32(round(length))
+        
+    }
+    // 长度步进 动作
+    @IBAction func lengthStepAction(_ sender: Any) {
+        
+        let length = lengthStep.intValue
+        lengthTxt.intValue = length
+        lengthSlider.intValue = length
+        
+    }
+    
+    // ------------------------------
+    
     
     var type = "URL";
     
@@ -227,8 +349,6 @@ class ViewController: NSViewController {
         }
         
     }
-    
-    
     
     
 }
