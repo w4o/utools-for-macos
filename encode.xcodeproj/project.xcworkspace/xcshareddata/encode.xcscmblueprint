@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "55C250298B55EFBEEC8067EC5E26703EC42A3711",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "55C250298B55EFBEEC8067EC5E26703EC42A3711" : 9223372036854775807,
+    "C3D8ED1CB28D809ADCE2C0DE74935E8A502ACD53" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "BA9C9966-E6B1-4B20-8E3B-C3FA058E3852",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "55C250298B55EFBEEC8067EC5E26703EC42A3711" : "encode-for-macos\/",
+    "C3D8ED1CB28D809ADCE2C0DE74935E8A502ACD53" : "encode-for-macos\/CryptoSwift\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "encode",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "encode.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:zhxiaowu\/encode-for-macos.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "55C250298B55EFBEEC8067EC5E26703EC42A3711"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/krzyzanowskim\/CryptoSwift.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "C3D8ED1CB28D809ADCE2C0DE74935E8A502ACD53"
+    }
+  ]
+}
